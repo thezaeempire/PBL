@@ -1,1 +1,26 @@
+# Part 1: Introduction to Inter-Process Communication (IPC)
 
+## What is a Process?
+A process is a program that is currently being executed by the computer.
+
+## What is Inter-Process Communication?
+Inter-Process Communication (IPC) refers to the methods used by processes to communicate with each other and exchange data.
+
+## Why is IPC Needed?
+- To exchange data between processes
+- To synchronize processes
+- To share resources
+- To coordinate different processes
+- To improve system performance
+
+## Example
+A web browser may use multiple processes. One process may handle the user interface while another handles network communication. IPC allows these processes to exchange information.
+
+## Main IPC Techniques
+1. Shared Memory
+2. Message Passing
+3. Pipes
+4. Signals
+5. Message Queues
+6. Sockets
+7. Semaphores
