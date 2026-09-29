@@ -1,1 +1,29 @@
+# Part 2: Shared Memory
 
+## What is Shared Memory?
+Shared Memory is an IPC technique where two or more processes access the same area of memory.
+
+## How Does It Work?
+1. The operating system creates a shared memory region.
+2. Multiple processes are given access to this region.
+3. One process can write data into the memory.
+4. Another process can read the data from the same memory.
+
+## Example
+
+Process A → Shared Memory → Process B
+
+Process A writes data into shared memory, and Process B reads that data.
+
+## Advantages
+- Very fast communication
+- Efficient for large amounts of data
+- Reduces the need for copying data
+
+## Disadvantages
+- Processes need synchronization
+- Incorrect access can cause data corruption
+- More difficult to manage safely
+
+## Common Use
+Shared memory is commonly used when multiple processes need to exchange large amounts of data quickly.
