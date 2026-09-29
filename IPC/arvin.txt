@@ -1,1 +1,54 @@
+Other IPC Techniques
+
+## 1. Message Queues
+
+A Message Queue is a system-managed queue where processes can store and retrieve messages.
+
+Process A → Message Queue → Process B
+
+### Advantages
+- Messages can be stored until the receiver is ready
+- Multiple processes can communicate
+- Messages can be organized
+
+### Disadvantage
+- Can have more overhead than shared memory
+## 2. Sockets
+
+Sockets allow processes to communicate with each other, either on the same computer or across different computers through a network.
+
+Process A → Network → Socket → Process B
+
+### Common Uses
+- Web applications
+- Client-server communication
+- Online games
+- Network services
+
+## 3. Semaphores
+
+A semaphore is mainly used for synchronization between processes.
+
+It controls access to shared resources and prevents multiple processes from accessing a resource incorrectly at the same time.
+
+### Example
+
+Process A → Resource ← Process B
+
+A semaphore can make sure only one process accesses the resource at a time.
+## Comparison
+
+| IPC Method | Main Purpose |
+|------------|--------------|
+| Shared Memory | Fast data sharing |
+| Message Passing | Sending and receiving messages |
+| Pipes | Simple data transfer |
+| Signals | Process notification |
+| Message Queues | Organized message exchange |
+| Sockets | Local/network communication |
+| Semaphores | Process synchronization |
+
+## Conclusion
+
+IPC allows processes to communicate, exchange data and synchronize their activities. Different IPC techniques are used depending on the requirements of the system.
 
