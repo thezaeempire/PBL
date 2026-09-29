@@ -1,1 +1,38 @@
 
+# Part 3: Message Passing
+
+## What is Message Passing?
+Message Passing is an IPC technique where processes communicate by sending and receiving messages.
+
+## How Does It Work?
+A process sends a message, and another process receives it.
+
+Process A → Message → Process B
+
+## Types of Message Passing
+
+### 1. Direct Communication
+The sender directly identifies the receiver.
+
+Example:
+Process A sends a message directly to Process B.
+
+### 2. Indirect Communication
+Messages are sent through a shared mailbox or message queue.
+
+Process A → Mailbox → Process B
+
+## Synchronous Communication
+The sender or receiver may wait until the communication is completed.
+
+## Asynchronous Communication
+The sender can continue working without waiting for the receiver.
+
+## Advantages
+- Easy to understand
+- Provides controlled communication
+- Useful for distributed systems
+
+## Disadvantages
+- Can be slower than shared memory
+- Communication creates additional overhead
