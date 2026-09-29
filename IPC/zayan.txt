@@ -1,1 +1,46 @@
+# Part 4: Pipes and Signals
+
+## Pipes
+
+A pipe is an IPC mechanism that allows one process to send data to another process.
+
+### Example
+
+Process A → Pipe → Process B
+
+The output of one process can become the input of another process.
+
+### Types of Pipes
+
+1. Anonymous Pipe
+   - Usually used between related processes.
+   - Example: Parent and child processes.
+
+2. Named Pipe (FIFO)
+   - Can be used by unrelated processes.
+   - Has a name in the operating system.
+
+### Advantages
+- Simple to use
+- Useful for transferring data between processes
+
+### Disadvantages
+- Limited compared to other IPC techniques
+- Usually designed for simple data streams
+
+
+## Signals
+
+A signal is a notification sent to a process to inform it that a specific event has occurred.
+
+### Examples
+- SIGINT – Interrupt a process
+- SIGTERM – Request a process to terminate
+- SIGKILL – Forcefully terminate a process
+
+### Example
+
+Process A → Signal → Process B
+
+Signals are mainly used for notification and process control rather than transferring large amounts of data.
 
